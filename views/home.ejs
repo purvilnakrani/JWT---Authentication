@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <div class="cakes">
+    <img src="/cake.png" alt="">
+  </div>
+  <div class="headings">
+    <h2>Cake Recipes</h2>
+    <h3>By Purvil Nakrani</h3>
+    <a href="/cakes" class="btn" height="1000" width="1000">View Recipes</a>
+  </div>
+</header>
+
+<script>
+  const btn= document.querySelector('.btn');
+  btn.addEventListener('onClick',()=>{
+    location.assign('/cakes');
+  })
+</script>
+
+<%- include('partials/footer'); -%>
